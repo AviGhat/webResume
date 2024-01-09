@@ -5,8 +5,313 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    
+    <nav id ="desktop-nav">
+        <div class="logo">Aviraj Ghatora</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Aviraj Ghatora</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon"onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        
+        <div class="section_text">
+            <p class="section_text_hello">
+                Hello, I'm
+            </p>
+            <h1 class ="title1">Aviraj Ghatora</h1>
+            <p class = "section_text_p2">3rd Year Student at UofT!</p>
+            <div class ="btn_container">
+                <button class ="btn btn-color-2"onclick="window.open('./assets/AvirajResume.pdf')">Resume</button>
+                <button class ="btn btn-color-1"onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id = "socials-container">
+                <img src = "./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/aviraj-ghatora/'">
+                <img src = "./assets/github.png" alt="GitHub profile" class="icon" onclick="location.href='https://github.com/AviGhat'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About me</h1>
+        <div class = "section-container">
+            <div class = "section_pic-container">
+                <img src="./assets/uoft.jpeg" alt = "PFP" class = "about-pic"> 
+            </div>
+            <div class = "about-details-container">
+                <div class = "about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt = "Experience Icon" class = "icon">
+                        <h3>Experience</h3>
+                        <p2>Video Editor</p2>
+                    </div>
+                    <div class ="details-container">
+                        <img src="./assets/education.png" alt = "education Icon" class = "icon">
+                        <h3>Education</h3>
+                        <p2>3rd Year Student Pursuing an H.B.Sc in Mathematics and Computer Science </p2>
+                    </div>
+                </div>
+                <div class = "text-container">
+                    <p>Hi I'm Aviraj, currently a domestic Canadian student who is a third-year university student at UofT pursuing a degree in Mathematics, with a double minor
+                        in Computer Science and Business/Entrepeneurship. I'm Looking to further pursue my career in the computer science field and further develop
+                        my skills in Software Engineering, and Software Development. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt = "arrow icon"
+            class = "icon arrow"
+            onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section_text_p1"> Explore My</p>
+        <h1 class="title"> Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technical Skills</h2>
+                    <div class = "article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" 
+                        alt ="checkmark" 
+                        class="icon">
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" 
+                        alt ="checkmark" 
+                        class="icon">
+                        <div>
+                            <h3>Java</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" 
+                        alt ="checkmark" 
+                        class="icon">
+                        <div>
+                            <h3>Python</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" 
+                        alt ="checkmark" 
+                        class="icon">
+                        <div>
+                            <h3>SQL</h3>
+                            <p>advanced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" 
+                        alt ="checkmark" 
+                        class="icon">
+                        <div>
+                            <h3>C</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Development Skills</h2>
+                    <div class = "article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" 
+                        alt ="checkmark" 
+                        class="icon">
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" 
+                        alt ="checkmark" 
+                        class="icon">
+                        <div>
+                            <h3>Java</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" 
+                        alt ="checkmark" 
+                        class="icon">
+                        <div>
+                            <h3>Python</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" 
+                        alt ="checkmark" 
+                        class="icon">
+                        <div>
+                            <h3>SQL</h3>
+                            <p>advanced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" 
+                        alt ="checkmark" 
+                        class="icon">
+                        <div>
+                            <h3>C</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt = "arrow icon"
+        class = "icon arrow"
+        onclick="location.href='./#projects'"
+    />
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" 
+                    alt="project1"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" 
+                    alt="project1"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" 
+                    alt="project1"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <img
+        src="./assets/arrow.png"
+        alt = "arrow icon"
+        class = "icon arrow"
+        onclick="location.href='./#projects'"
+    />
+    </section>
+    <section id="project-descriptions">
+        <p class="section_text_p2">Project 1 description</p>
+        <p>yo</p>
+        <p class="section_text_p2">Project 2 description </p>
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png"
+                alt="email"
+                class="icon email-icon"
+                />
+                <p><a href="aviraj.ghatora@mail.utoronto.ca">aviraj.ghatora@mail.utoronto.ca</a></p>
+            </div>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon"
+                    />
+                    <p><a href="//www.linkedin.com/in/aviraj-ghatora/">LinkedIn</a></p>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Aviraj Ghatora. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
