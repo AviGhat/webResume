@@ -417,3 +417,8 @@ footer{
 footer p{
     text-align: center;
 }
+
+.section_text_p2, .pDesc{
+    margin-bottom:auto;
+
+}
